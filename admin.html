@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+<style>
+body {background:#111; color:lime; font-family:sans-serif; padding:20px;}
+input, button {padding:10px; margin:5px; font-size:16px;}
+button {background:green; color:white; border:none; border-radius:5px;}
+</style>
+</head>
+<body>
+
+<h1>Admin Panel</h1>
+
+<script>
+const ADMIN_PASSWORD = "1234"; // change this password
+let p = prompt("Enter admin password:");
+if(p !== ADMIN_PASSWORD){
+  alert("Wrong password! Go back to player page.");
+  window.location="index.html";
+}
+</script>
+
+<h2>Add / Edit Number</h2>
+<input id="number" placeholder="Phone Number"><br>
+<input id="menuKey" placeholder="Menu Key (1,2,3)"><br>
+<input id="text" placeholder="Menu Text"><br>
+<input id="autoText" placeholder="Auto Text"><br>
+<input id="video" placeholder="Video URL (optional)"><br>
+<button onclick="addEntry()">Save</button>
+
+<pre id="output"></pre>
+
+<script src="admin.js"></script>
+</body>
+</html>
