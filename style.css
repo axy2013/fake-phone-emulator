@@ -1,0 +1,49 @@
+body {
+  background:#111;
+  font-family:sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  color:lime;
+}
+
+.phone {
+  width:300px;
+  background:black;
+  border-radius:30px;
+  padding:15px;
+  box-shadow:0 0 20px #0f0;
+}
+
+#screen {
+  height:150px;
+  background:#000;
+  border:1px solid lime;
+  padding:10px;
+  overflow-y:auto;
+  margin-bottom:10px;
+}
+
+.dial {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+button {
+  padding:18px;
+  font-size:18px;
+  background:#222;
+  color:lime;
+  border:none;
+  border-radius:50%;
+}
+
+.call {
+  margin-top:10px;
+  width:100%;
+  border-radius:20px;
+  background:green;
+  font-weight:bold;
+}
