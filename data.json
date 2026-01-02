@@ -1,0 +1,13 @@
+{
+  "404": {
+    "name": "Atlas Systems",
+    "menu": {
+      "1": {"text": "Tracking unavailable.", "autoText": "Try again later."},
+      "2": {"text": "Support is offline.", "autoText": "Call again soon."}
+    }
+  },
+  "777": {
+    "name": "Video Clue Channel",
+    "video": "https://www.youtube.com/embed/YOUTUBE_ID"
+  }
+}
