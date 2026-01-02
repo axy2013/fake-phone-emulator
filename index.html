@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fake Phone Emulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PHONE SCREEN -->
+<div class="phone">
+  <div id="screen">Welcome!</div>
+
+  <div class="dial">
+    <button onclick="press('1')">1</button>
+    <button onclick="press('2')">2</button>
+    <button onclick="press('3')">3</button>
+    <button onclick="press('4')">4</button>
+    <button onclick="press('5')">5</button>
+    <button onclick="press('6')">6</button>
+    <button onclick="press('7')">7</button>
+    <button onclick="press('8')">8</button>
+    <button onclick="press('9')">9</button>
+    <button onclick="press('*')">*</button>
+    <button onclick="press('0')">0</button>
+    <button onclick="press('#')">#</button>
+  </div>
+
+  <button class="call" onclick="callNumber()">CALL</button>
+
+  <!-- VIDEO -->
+  <div id="videoContainer" style="display:none; margin-top:10px;">
+    <video id="phoneVideo" width="100%" controls>
+      <source id="videoSource" src="" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
